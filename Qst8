@@ -1,0 +1,33 @@
+// Modulo criado como moeda.py
+
+def aumentar(valor):
+    return valor * 1.1
+
+
+def diminuir(valor):
+    return valor * 0.9
+
+
+def dobro(valor):
+    return valor * 2
+
+
+def metade(valor):
+    return valor / 2
+
+
+
+
+
+// Código
+
+
+
+import moeda
+
+
+valor = float(input('Digite o preço: R$'))
+print(f'A metade de {valor} é {moeda.metade(valor):.2f}')
+print(f'O dobro de {valor} é {moeda.dobro(valor):.2f}')
+print(f'Aumentando 10%, temos {moeda.aumentar(valor):.2f}')
+print(f'Reduzindo 10%, temos {moeda.diminuir(valor):.2f}')
