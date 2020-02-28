@@ -1,0 +1,19 @@
+maior = 0
+menor = 0
+velho = str
+media = 0
+
+for i in range (0,4):
+    nome = str(input("Digite o nome da pessoa:"))
+    idade = int(input("Digite a idade da pessoa:"))
+    sexo = str(input("Digite o sexo da pessoa (F para feminino e M para masculino) :"))
+    if idade > maior and sexo == 'M':
+        maior = idade
+        velho = nome
+    elif idade <= 20 and sexo == 'F':
+        menor += 1
+    media += idade
+
+print('A média das idades é: {}'
+      '\n Homem mais velho : {}'
+      '\n Mulheres que tem menos de 20 anos {}'.format(media/4, velho, menor))
