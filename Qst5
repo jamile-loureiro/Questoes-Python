@@ -1,0 +1,5 @@
+valor = float(input("Digite o valor do produto: "))
+
+aVista =  valor * 0.9
+
+print("O valor a ser pago à vista no dinheiro/cheque é: {:.1f}".format(aVista))
