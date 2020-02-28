@@ -1,0 +1,24 @@
+from random import randint
+from time import sleep
+
+
+def sorteia(lst):
+    print('Escolhendo os 5 valores aleatórios, de 0 a 100,  para a lista: \n', end='')
+    for i in range(0, 5):
+        lst.append(randint(0, 100))
+        sleep(0.5)
+        print(f'{lst[i]} ', end='')
+    print(f'\nA lista é: {lst}\n')
+
+
+def somaPar(lst):
+    soma = 0
+    for i in lst:
+        if i % 2 == 0:
+            soma += i
+    print(f'A soma dos valores pares da lista é = {soma}')
+
+
+numeros = list()
+sorteia(numeros)
+somaPar(numeros)
